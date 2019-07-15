@@ -230,3 +230,7 @@
         width: 100%;
         padding: 0.5rem;
     }
+    
+    #map {
+        height: 100%;
+    }
