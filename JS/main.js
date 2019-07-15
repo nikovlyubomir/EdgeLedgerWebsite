@@ -11,3 +11,13 @@ function initMap() {
     const marker = new google.maps.Marker({ position: location, map: map })
 
 }
+
+var $root = $('html, body');
+
+$('a[href^="#"]').click(function() {
+    $root.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 100
+    }, 500);
+
+    return false;
+});
